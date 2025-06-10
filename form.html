@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Animal Form</title>
+  </head>
+  <body>
+
+    <header>
+        <a href="index.html">
+      <h1>Animals JS</h1>
+      </a>
+      <a href="form.html">Form</a>
+    </header>
+
+    <div class="formContainer">
+        <h2>Ajouter un nouvel animal</h2>
+      <form id="animalAddForm">
+        <div>
+          <label for="nameInput">Name</label>
+          <input
+            type="text"
+            id="nameInput"
+            name="name"
+          />
+        </div>
+          <label for="DescriptionInput">Description</label>
+          <input
+            type="text"
+            id="DescriptionInput"
+            name="description"
+          />
+        <div>
+          <label for="TypeInput">Type</label>
+          <input
+            type="text"
+            id="TypeInput"
+            name="type"
+          />
+        <div>
+          <label for="TypeInput">Url</label>
+          <input
+            type="text"
+            id="UrlInput"
+            name="url"
+          />
+        </div>
+        <div id="errors"></div>
+        
+        <!-- Ici aussi le bouton devrait être à droite mais pb de temps -->
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>
