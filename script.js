@@ -144,8 +144,10 @@ animalForm.addEventListener('submit', function (e) {
   }
 
   if (typeInput.value.trim().length <= 0) {
-    errors.push('Type cannot be empty');
-  }
+  errors.push('Type cannot be empty');
+} else if (!currentTypes.includes(typeInput.value.trim())) {
+  errors.push('Unknown category');
+}
 
   if (urlInput.value.trim().length <= 0) {
     errors.push('URL cannot be empty');
@@ -172,3 +174,6 @@ animalForm.addEventListener('submit', function (e) {
 });
 
 // ÉTAPE 5 : VALIDATION DES DONNÉES
+
+const currentTypes = ['Feline', 'Canid', 'Weasel'];
+// et modif à partir de la ligne 147
