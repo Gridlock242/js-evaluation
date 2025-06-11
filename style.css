@@ -70,3 +70,26 @@ header a {
     border-radius: 4px;
     margin-top: 10px;
 }
+
+/* FORMULAIRE */
+
+.formContainer {
+  background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px; 
+    width: 400px; 
+    max-width: 90%; 
+    margin: 40px auto; 
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.formContainer h2 {
+  margin-bottom: 0.5em;
+}
+
+.formContainer button {
+  margin-top: 1em;
+}

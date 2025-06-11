@@ -4,26 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-
     <title>Animal JS</title>
   </head>
   <body>
     <header>
       <h1>Animals JS</h1>
-      <a href="form.html">Form</a>
     </header>
 
-
-    <!-- En termes d'UX il faudrait mettre le sélecteur à droite (mais j'ai pas le temps) -->
-      <p>Filtres</p>
-      <select id="animalFilter">
-        <option value="all">All</option>
-        <option value="1">Feline</option>
-        <option value="2">Canid</option>
-        <option value="3">Weasel</option>
-      </select>
+    <p>Filtres</p>
+    <select id="animalFilter">
+      <option value="all">All</option>
+      <option value="1">Feline</option>
+      <option value="2">Canid</option>
+      <option value="3">Weasel</option>
+    </select>
 
     <div id="animals" class="animalsDisplay"></div>
+
+    <div class="formContainer">
+      <h2>Ajouter un nouvel animal</h2>
+      <form id="animalAddForm">
+        <div>
+          <label for="nameInput">Name</label>
+          <input type="text" id="nameInput" name="name" />
+        </div>
+        <div>
+          <label for="descriptionInput">Description</label>
+          <input type="text" id="descriptionInput" name="description" />
+        </div>
+        <div>
+          <label for="typeInput">Type</label>
+          <input type="text" id="typeInput" name="type" />
+        </div>
+        <div>
+          <label for="urlInput">Url</label>
+          <input type="text" id="urlInput" name="url" />
+        </div>
+        <div id="errors"></div>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
-<script src="script.js"></script>
+
